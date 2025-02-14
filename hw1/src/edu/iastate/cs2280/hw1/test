@@ -1,0 +1,15 @@
+@Test
+public void testWho() {
+    Badger badger = new Badger(new Plain(3), 0, 0, 0);
+    assertEquals(State.BADGER, badger.who());
+}
+
+@Test
+public void testNext() {
+    Plain pOld = new Plain(3);
+    pOld.grid[1][1] = new Badger(pOld, 1, 1, 2);
+    Plain pNew = new Plain(3);
+    Living nextLiving = pOld.grid[1][1].next(pNew);
+    assertTrue(nextLiving instanceof Badger);
+    assertEquals(3, ((Badger) nextLiving).myAge());
+}
