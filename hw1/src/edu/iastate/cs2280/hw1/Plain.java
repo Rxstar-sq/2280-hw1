@@ -98,6 +98,11 @@ public class Plain
 		// TODO 
 		width = w;
         grid = new Living[width][width];
+        for (int i = 0; i < width; i++) {
+            for (int j = 0; j < width; j++) {
+                grid[i][j] = new Empty(this, i, j);
+            }
+        }
 	}
 	
 	

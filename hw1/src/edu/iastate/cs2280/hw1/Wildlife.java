@@ -6,6 +6,7 @@ import java.util.Scanner;
 /**
  *  
  * @author Yingxuan Ye
+
  *
  */
 
@@ -15,6 +16,8 @@ import java.util.Scanner;
  * squares inhabited by badgers, foxes, rabbits, grass, or none. 
  *
  */
+
+
 public class Wildlife 
 {
 	/**
